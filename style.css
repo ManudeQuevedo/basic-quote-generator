@@ -1,0 +1,111 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;800&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(240, 240, 240);
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  width: 95vw;
+}
+
+div.quotes {
+  display: block;
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+
+.source {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.buttons {
+  display:flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  width: 70%;
+}
+
+button {
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  width: 200px;
+}
+
+button.btn-twitter {
+  border: none;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.3);
+  color: #00bbf9;
+  transition: all .5s
+}
+
+button.btn-twitter:hover {
+  background-color: #00bbf9;
+  color: #fff;
+  transition: all .5s;
+}
+
+button.btn-newQuote {
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.3);
+  color: #212529;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  transition: all .5s;
+}
+
+button.btn-newQuote:hover {
+  background: #212529;
+  color: #fff;
+  font-weight: 800;
+  transition: all .5s;
+}
+
+@media screen and (max-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  .quote {
+    font-size: 1.5rem;
+  }
+
+  button {
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    width: 150px;
+  }
+
+  button.btn-newQuote {
+    font-size: 1rem;
+  }
+}
